@@ -1,0 +1,16 @@
+body
+    {
+    background-color: #D67834;
+    text-align: center;
+    }
+
+h1
+    {
+    color:gold;
+    }
+
+p
+    {
+    text-decoration: underline;
+    font-weight: bold;
+    }
