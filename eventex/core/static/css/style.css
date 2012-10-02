@@ -1,16 +1,53 @@
-body
-    {
-    background-color: #D67834;
-    text-align: center;
+body    {
+    background-color:   #A8DBA8;
+    text-align:         center;
+    margin:             auto 10% auto 10%;
     }
 
-h1
-    {
-    color:gold;
+h2  {
+    color:              #0B486B;
     }
 
-p
-    {
-    text-decoration: underline;
-    font-weight: bold;
+p   {
+    font-family:        sans-serif;
     }
+
+div {
+    background-color:   #79BD9A;
+    border-radius:      15px;
+    padding:            10px;
+    margin:             5px;
+    }
+
+#header {
+    background-color:   #CFF09E;
+    }
+
+
+#header h1  {
+    color:              #3B8686;
+    }
+
+.styled {
+    background-color:   #3B8686;
+    color:              #CFF09E;
+    border-radius:      5px;
+    text-align:         justify;
+    }
+
+.logo {
+    width:              180px;
+    height:             180px;
+    }
+
+/*
+Color Pallete:
+found at: http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
+
+CFF09E 
+A8DBA8 
+79BD9A 
+3B8686 
+0B486B 
+
+*/

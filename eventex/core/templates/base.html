@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PULIC  "-//W3XC/DTD HTML 4.0.1//EN">
+<html>
+  <head>
+      <title>EventeX</title>
+      <link type="text/css" href="{{ STATIC_URL }}css/style.css"
+          rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div id="header">
+        <h1>.:: EventeX ::.</h1>
+        <img class="logo" src="{{ STATIC_URL }}img/dharma-logo.png"/>
+
+    </div>
+    <div id="content">
+      
+      {% block content %}
+      {% endblock content %}
+      
+    </div>
+  </body>
+</html>
