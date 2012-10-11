@@ -1,6 +1,7 @@
 #coding: utf-8
 from django.test import TestCase
 from eventex.subscriptions.models import Subscription
+from django.core.urlresolvers import reverse as r
 
 class SuccessTest(TestCase):
     def setUp(self):
@@ -9,7 +10,7 @@ class SuccessTest(TestCase):
                                         cpf     ='12345678901',
                                         email   ='henrique@bastos.net',
                                         phone   ='21-96186180',)
-        self.resp = self.client.get('/inscricao/%d/' % s.pk)
+        self.resp = self.client.get(r('subscriptions:success', args=[s.pk]))
 
 
 
@@ -32,11 +33,11 @@ class SuccessTest(TestCase):
 
 class SuccessNotFound(TestCase):
     def test_not_found(self):
-        response = self.client.get('/inscricao/0/')
+        response = self.client.get(r('subscriptions:success', args=[0]))
         self.assertEqual(404, response.status_code) 
 
 class SuccessNotFound(TestCase):
     def test_not_found(self):
-        response = self.client.get('/inscricao/0/')
+        response = self.client.get(r('subscriptions:success', args=[0]))
         self.assertEqual(404, response.status_code)
 
