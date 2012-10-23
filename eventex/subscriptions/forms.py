@@ -12,6 +12,11 @@ def CPFValidator(value):
     if not value.isdigit():
         raise ValidationError(_('CPF deve conter apenas números.'))
 
+    if len(value) != 11: 
+        raise ValidationError(_('CPF deve conter 11 números'))
+
+
+
 class SubscriptionForm(forms.ModelForm):
     class Meta:
         model = Subscription
