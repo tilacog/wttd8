@@ -22,6 +22,22 @@ class SubscriptionFormTest(TestCase):
         'CPF must have 11 digits'
         form = self.make_validated_form(cpf='1234')
         self.assertItemsEqual(['cpf'], form.errors)
+    
+    def test_email_is_optional(self):
+        'Email is optional'
+        form = self.make_validated_form(email='')
+        self.assertFalse(form.errors)
+
+
+
+
+
+
+
+
+
+
+
 
     def make_validated_form(self, **kwargs):
         data = dict(name='Tiago',email='tiago@gmail.com',
